@@ -1,7 +1,10 @@
 header {
   display: flex;
-  background: white;
-  border-bottom: 10px solid var(--qwik-dark-purple);
+  align-items: center;
+  padding: 8px;
+  background: #bae6fd;
+  border-radius: 1rem;
+  margin-top: 10px;
 }
 
 header .logo a {

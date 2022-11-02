@@ -4,7 +4,7 @@ import Header from '../components/header/header';
 export default component$(() => {
   return (
     <>
-      <main>
+      <main className="container mx-auto">
         <Header />
         <section>
           <Slot />
