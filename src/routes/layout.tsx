@@ -6,15 +6,10 @@ export default component$(() => {
     <>
       <main className="container mx-auto">
         <Header />
-        <section>
+        <section className="my-4">
           <Slot />
         </section>
       </main>
-      <footer>
-        <a href="https://www.builder.io/" target="_blank">
-          Made with ♡ by Builder.io
-        </a>
-      </footer>
     </>
   );
 });
