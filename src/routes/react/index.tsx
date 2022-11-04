@@ -1,10 +1,10 @@
 import {component$} from "@builder.io/qwik";
-import {ReactButton} from "~/integrations/react/react-button";
+import {ReactCounter} from "~/integrations/react/react-counter";
 
 export default component$(() => {
     return (
         <div>
-            <ReactButton client:hover/>
+            <ReactCounter client:hover/>
         </div>
     );
 });

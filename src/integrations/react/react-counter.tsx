@@ -3,7 +3,7 @@
 import {qwikify$} from "@builder.io/qwik-react";
 import {useState} from "react";
 
-export const ReactButton = qwikify$(() => {
+export const ReactCounter = qwikify$(() => {
     const [counter, setCounter] = useState(0);
 
     return (
