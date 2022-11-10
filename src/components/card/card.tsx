@@ -4,7 +4,7 @@ import {Link} from "@builder.io/qwik-city";
 
 export default component$((props: CardProps) => {
     return (
-        <div className="w-96 flex flex-col border rounded-md shadow-xl">
+        <div className="max-w-96 flex flex-col border rounded-md shadow-xl">
             <figure>
                 <img className="h-56 object-scale-down mx-auto" src={props.image} alt={props.title}/>
             </figure>
