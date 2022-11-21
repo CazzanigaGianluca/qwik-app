@@ -16,7 +16,6 @@ export default component$(() => {
   });
 
   const onCheckoutSubmit = $((e: Event): void => {
-    e.preventDefault();
     alert(`Dati inseriti:
       ${JSON.stringify(state)}
     `);
@@ -24,7 +23,7 @@ export default component$(() => {
 
   return (
     <div>
-      <form onSubmit$={onCheckoutSubmit}>
+      <form preventdefault:submit onSubmit$={onCheckoutSubmit}>
         <CheckoutSection title="Dati di spedizione">
           <span q:slot="content">
             <div className="grid grid-cols-6 gap-6">
