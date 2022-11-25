@@ -1,8 +1,8 @@
 import {$, component$, Resource, useClientEffect$, useStore} from "@builder.io/qwik";
 import {RequestHandler, useEndpoint} from "@builder.io/qwik-city";
-import {Product} from "~/routes/product";
 import Rating from "~/components/rating/rating";
 import Button from "~/components/button/button";
+import { Product } from "~/routes";
 
 export const onGet: RequestHandler<Product> = async ({params}) => {
     return await fetch(`https://fakestoreapi.com/products/${params.productId}`).then(res => res.json());
